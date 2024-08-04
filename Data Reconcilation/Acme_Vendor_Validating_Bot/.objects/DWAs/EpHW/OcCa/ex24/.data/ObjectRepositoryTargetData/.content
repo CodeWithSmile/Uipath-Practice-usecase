@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YrlLJpD9zESQpEd31jXvgQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/home" CVScreenId="c3765d1c-6ddb-4d8a-af2c-dd14050b8025" CvTextArea="402, 506, 109, 16" CvTextArgument="Vendor Inventory" CvType="Text" DesignTimeRectangle="385, 500, 248, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;&lt;webctrl aaname='Vendor Inventory' parentid='dashmenu' tag='A' href='https://acme-test.uipath.com/vendors/inventory' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vendor Inventory' parentid='dashmenu' tag='A' type='' class='' check:innerText='Vendor Inventory' /&gt;" Guid="4f90ecc6-4286-4751-88e2-3862668650d1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b1a8cfb8fe857d8255aac31ffaf3e556.png" xmlns="">0rywXxmf7MkqM7lxqoXRcuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

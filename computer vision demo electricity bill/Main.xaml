@@ -1,0 +1,588 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="678,3500" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,3435" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="captcha" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="626,3347" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3199" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: वीज देयक अवलोकन/भरणा" sap:VirtualizedContainerService.HintSize="530,3114" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2874" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Paidsuccesfully" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NHover DisplayName="Hover 'Language/भाषा'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NHover_1" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NHover.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" CvTextArea="1068, 184, 81, 14" CvTextArgument="Language/1TT" CvType="Text" DesignTimeRectangle="1069, 184, 78, 13" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Language/भाषा' check:innerText='Language/भाषा' /&gt;" Guid="822710d9-bd51-4ef5-be32-92130bdd3ca6" InformativeScreenshot="3b88e78967833f2bcffcee4f5d983181.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='वीज देयक अवलोकन/भरणा' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NHover.Target>
+                    </uix:NHover>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'English'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" DesignTimeRectangle="1025, 201, 50, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='sub_products' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sub_products' tag='A' type='' class='' aaname='English' check:innerText='English' /&gt;" Guid="b82021c6-e322-41e1-8155-4db6e8a8d420" InformativeScreenshot="0f12148abc2bc4ae181e2865f828e912.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='वीज देयक अवलोकन/भरणा' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View/Pay Bill'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getHome&amp;Lang=English" CvTextArea="182, 401, 85, 14" CvTextArgument="View/Pay Bill" CvType="Text" DesignTimeRectangle="183, 401, 84, 13" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl id='leftnav_lblViewPay' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='leftnav_lblViewPay' type='' tag='SPAN' class='' aaname='View/Pay Bill' check:innerText='View/Pay Bill' /&gt;" Guid="fc8d60b1-362a-407d-9b7e-019e3f012522" InformativeScreenshot="4a52638adb27da465227e0cde20d0b0c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome to Web Self Service' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT consumerNo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Text="170730026938" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" CvElementArea="729, 338, 197, 20" CvType="InputBox" DesignTimeRectangle="730, 340, 195, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form_table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='consumerNo' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form_table' tag='TABLE' /&gt;&lt;webctrl id='consumerNo' type='text' tag='INPUT' class='inp_field' aaname='' /&gt;" Guid="9701e0cc-891a-46b9-ac5a-438057e540d4" InformativeScreenshot="c15232d0a8537b7acf086933aa2b1f8f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='View/Pay Bill' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="79918d43-a4f7-4091-951f-202885fefbf6" DisplayName="CV Screen Scope" sap:VirtualizedContainerService.HintSize="434,593" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                      <p:CVScope.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" ScrollOffset="{x:Null}" Descriptor="[&quot;Target: AnyText (730,370,71,23)&quot; +&#xA;&quot;Anchor: Text 'Captcha*' (653,359,58,14)&quot;]" DesignTimeCacheId="79918d43-a4f7-4091-951f-202885fefbf6" DesignTimeScaleFactor="1" DisplayName="CV Get Text - Any Text" sap:VirtualizedContainerService.HintSize="400,243" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_1" InformativeScreenshot="2f7dda0d74652583b9323533aba73b1d" NumberOfScrolls="2" RefreshBefore="True" Result="[captcha]" ScrollDirection="None" Version="V6">
+                              <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                                <uc:CvDescriptor Id="d155735f-b73c-405a-94ec-51b073389260">
+                                  <uc:CvDescriptor.Anchors>
+                                    <x:Array Type="uc:CvElementDescriptor">
+                                      <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="653, 359, 58, 14" ElementType="Text" Text="Captcha*" />
+                                    </x:Array>
+                                  </uc:CvDescriptor.Anchors>
+                                  <uc:CvDescriptor.Target>
+                                    <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="730, 370, 71, 23" ElementType="AnyText" />
+                                  </uc:CvDescriptor.Target>
+                                </uc:CvDescriptor>
+                              </p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                            </p:CvGetTextWithDescriptor>
+                          </Sequence>
+                        </ActivityAction>
+                      </p:CVScope.Body>
+                      <p:CVScope.DesignTimeCache>
+                        <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                      </p:CVScope.DesignTimeCache>
+                      <p:CVScope.DesignTimeCacheContainer>
+                        <uc:CvCacheContainer>
+                          <uc:CvCacheContainer.Caches>
+                            <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                              <uc:CVCache DataSent="False" DisplayName="1" Id="79918d43-a4f7-4091-951f-202885fefbf6" InformativeScreenshot="4202b1fed566495ff5727ddfefd6fbba" LogicalPosition="0, 0" OcrText="View/Pay Bill X + _ X https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill + ... , MAHAVITARAN Maharashtra State Electicty Distibution Co Lid *mim OP Maharashtra State Electricity Distribution Company Limited Web Self Service Home &gt; View/Pay Bill Language/1TT Web Self Service View/Pay Bill Home Help Manuals on Block or allow pop-ups. Document New Video New New User Registration View My Dues * indicates a required field O Consumer Type * LT Consumer v Login Consumer No.(12 digits) * 1234 ? Forgot Login Name/Password? Captcha* 1erkxs View/Pay Bill Consumption Calculator Enter the above captcha in the box. + Captcha* Energy Bill Calculator Submit Clear New Connection Request Complaint Registration Online Application Related Complaint Registration New Security Deposit Estimation New Complaint Status Submit Reading" Position="0, 0" ScreenshotGuid="69be0a3c-87c6-4b51-9b15-960af8d9d568" ServerVersion="1">
+                                <uc:CVCache.CvAnchorRelations>
+                                  <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="8">
+                                    <uc:AnchorRelationInfo IsTargetText="False" Target="25">
+                                      <uc:AnchorRelationInfo.Anchors>
+                                        <x:Array Type="x:Int32">
+                                          <x:Int32>78</x:Int32>
+                                        </x:Array>
+                                      </uc:AnchorRelationInfo.Anchors>
+                                    </uc:AnchorRelationInfo>
+                                    <uc:AnchorRelationInfo IsTargetText="False" Target="117">
+                                      <uc:AnchorRelationInfo.Anchors>
+                                        <x:Array Type="x:Int32">
+                                          <x:Int32>62</x:Int32>
+                                          <x:Int32>63</x:Int32>
+                                          <x:Int32>64</x:Int32>
+                                        </x:Array>
+                                      </uc:AnchorRelationInfo.Anchors>
+                                    </uc:AnchorRelationInfo>
+                                    <uc:AnchorRelationInfo IsTargetText="False" Target="15">
+                                      <uc:AnchorRelationInfo.Anchors>
+                                        <x:Array Type="x:Int32">
+                                          <x:Int32>84</x:Int32>
+                                        </x:Array>
+                                      </uc:AnchorRelationInfo.Anchors>
+                                    </uc:AnchorRelationInfo>
+                                    <uc:AnchorRelationInfo IsTargetText="False" Target="16">
+                                      <uc:AnchorRelationInfo.Anchors>
+                                        <x:Array Type="x:Int32">
+                                          <x:Int32>69</x:Int32>
+                                          <x:Int32>70</x:Int32>
+                                          <x:Int32>71</x:Int32>
+                                          <x:Int32>72</x:Int32>
+                                        </x:Array>
+                                      </uc:AnchorRelationInfo.Anchors>
+                                    </uc:AnchorRelationInfo>
+                                    <uc:AnchorRelationInfo IsTargetText="False" Target="11">
+                                      <uc:AnchorRelationInfo.Anchors>
+                                        <x:Array Type="x:Int32">
+                                          <x:Int32>6</x:Int32>
+                                        </x:Array>
+                                      </uc:AnchorRelationInfo.Anchors>
+                                    </uc:AnchorRelationInfo>
+                                  </scg:List>
+                                </uc:CVCache.CvAnchorRelations>
+                                <uc:CVCache.CvUiElements>
+                                  <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="128">
+                                    <uc:CvElementInfo Category="Button" Region="1036, 473, 61, 21" />
+                                    <uc:CvElementInfo Category="Button" Region="88, 0, 241, 33" />
+                                    <uc:CvElementInfo Category="Button" Region="1096, 473, 51, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="10, 2, 27, 28" />
+                                    <uc:CvElementInfo Category="Icon" Region="96, 5, 19, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="1332, 319, 24, 25" />
+                                    <uc:CvElementInfo Category="Icon" Region="1332, 200, 26, 25" />
+                                    <uc:CvElementInfo Category="Icon" Region="1332, 79, 23, 23" />
+                                    <uc:CvElementInfo Category="Icon" Region="1332, 162, 24, 21" />
+                                    <uc:CvElementInfo Category="Icon" Region="1333, 695, 23, 23" />
+                                    <uc:CvElementInfo Category="Icon" Region="973, 39, 23, 22" />
+                                    <uc:CvElementInfo Category="InputBox" Region="93, 34, 961, 33" />
+                                    <uc:CvElementInfo Category="Icon" Region="1333, 120, 22, 23" />
+                                    <uc:CvElementInfo Category="MinimizeButton" Region="1241, 8, 20, 17" />
+                                    <uc:CvElementInfo Category="Icon" Region="1333, 281, 22, 22" />
+                                    <uc:CvElementInfo Category="InputBox" Region="721, 440, 127, 20" />
+                                    <uc:CvElementInfo Category="InputBox" Region="720, 331, 197, 19" />
+                                    <uc:CvElementInfo Category="Icon" Region="1114, 40, 23, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="1330, 36, 29, 28" />
+                                    <uc:CvElementInfo Category="Icon" Region="1247, 40, 24, 23" />
+                                    <uc:CvElementInfo Category="Icon" Region="1333, 240, 22, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="1159, 39, 24, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="116, 40, 19, 21" />
+                                    <uc:CvElementInfo Category="ArrowButton" Region="1305, 71, 18, 21" />
+                                    <uc:CvElementInfo Category="Icon" Region="337, 4, 23, 22" />
+                                    <uc:CvElementInfo Category="InputBox" Region="727, 358, 106, 48" />
+                                    <uc:CvElementInfo Category="Icon" Region="1013, 39, 23, 22" />
+                                    <uc:CvElementInfo Category="CloseButton" Region="1334, 6, 19, 19" />
+                                    <uc:CvElementInfo Category="Icon" Region="1067, 40, 21, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="1331, 360, 25, 22" />
+                                    <uc:CvElementInfo Category="MaximizeButton" Region="1288, 6, 18, 19" />
+                                    <uc:CvElementInfo Category="Icon" Region="60, 39, 23, 23" />
+                                    <uc:CvElementInfo Category="Icon" Region="15, 38, 26, 23" />
+                                    <uc:CvElementInfo Category="ArrowButton" Region="1305, 701, 20, 22" />
+                                    <uc:CvElementInfo Category="CloseButton" Region="302, 7, 19, 19" />
+                                    <uc:CvElementInfo Category="Icon" Region="1332, 425, 24, 23" />
+                                    <uc:CvElementInfo Category="Icon" Region="841, 366, 26, 27" />
+                                    <uc:CvElementInfo Category="Icon" Region="292, 89, 47, 67" />
+                                    <uc:CvElementInfo Category="Icon" Region="1203, 39, 23, 22" />
+                                    <uc:CvElementInfo Category="Icon" Region="1291, 43, 23, 15" />
+                                    <uc:CvElementInfo Category="Icon" Region="191, 89, 59, 38" />
+                                    <uc:CvElementInfo Category="MaximizeButton" Region="48, 4, 23, 23" />
+                                    <uc:CvElementInfo Category="Icon" Region="920, 327, 25, 20" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="49, 5, 21, 21" />
+                                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="920, 327, 26, 20" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="508, 331, 12, 12" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="424, 77, 67, 56" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="672, 83, 78, 64" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="758, 102, 32, 28" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="556, 81, 103, 65" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="458, 306, 12, 11" />
+                                    <uc:CvElementInfo Category="MinimizeButton" Confidence="Runtime" Region="1291, 43, 22, 16" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="991, 280, 13, 13" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="725, 307, 15, 14" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="316, 153, 19, 11" />
+                                    <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="507, 330, 15, 14" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="1056, 97, 34, 31" />
+                                    <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="991, 279, 14, 14" />
+                                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="720, 304, 97, 20" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="1118, 133, 24, 16" />
+                                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="60, 39, 24, 23" />
+                                    <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="14, 38, 26, 23" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="988, 90, 48, 61" />
+                                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="1247, 40, 23, 23" />
+                                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="152, 80, 135, 81" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="359, 88, 58, 53" />
+                                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="4, 1, 81, 31" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="412, 443, 12, 12" />
+                                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="923, 1, 10, 10" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="160, 696, 192, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="657, 437, 27, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="650, 436, 16, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="350, 436, 372, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="643, 436, 11, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="656, 436, 54, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="360, 410, 344, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="884, 436, 255, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="1029, 411, 118, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="752, 437, 330, 24" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="372, 701, 770, 23" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="689, 409, 308, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="1026, 436, 122, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="868, 411, 272, 25" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="671, 436, 20, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="634, 436, 13, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="681, 436, 23, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="624, 437, 199, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="160, 720, 190, 8" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="986, 435, 49, 28" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="945, 436, 49, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="624, 436, 31, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="349, 664, 816, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="920, 436, 49, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="1320, 683, 41, 40" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="644, 411, 67, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="163, 666, 188, 34" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="149, 452, 198, 265" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="865, 436, 17, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="894, 436, 49, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="448, 436, 159, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="887, 436, 132, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="163, 618, 188, 50" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="589, 436, 75, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="954, 411, 114, 25" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="591, 691, 526, 31" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="688, 436, 25, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="356, 608, 790, 50" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="903, 410, 118, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="670, 437, 68, 24" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="1032, 436, 53, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="357, 554, 767, 50" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="349, 720, 367, 8" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="626, 437, 15, 27" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="345, 694, 311, 29" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="1320, 410, 42, 63" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="979, 436, 130, 26" />
+                                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="358, 437, 110, 26" />
+                                    <uc:CvElementInfo Category="InputBox" Region="721, 303, 96, 20" />
+                                    <uc:CvElementInfo Category="ArrowButton" Region="799, 305, 18, 18" />
+                                  </scg:List>
+                                </uc:CVCache.CvUiElements>
+                                <uc:CVCache.OcrTexts>
+                                  <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="117">
+                                    <uc:OcrTextInfo Region="122, 9, 51, 15" Text="View/Pay" />
+                                    <uc:OcrTextInfo Region="175, 9, 16, 12" Text="Bill" />
+                                    <uc:OcrTextInfo Region="305, 10, 12, 12" Text="X" />
+                                    <uc:OcrTextInfo Region="340, 7, 16, 16" Text="+" />
+                                    <uc:OcrTextInfo Region="1244, 6, 13, 12" Text="_" />
+                                    <uc:OcrTextInfo Region="1336, 9, 13, 13" Text="X" />
+                                    <uc:OcrTextInfo Region="142, 44, 419, 16" Text="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" />
+                                    <uc:OcrTextInfo Region="1211, 48, 10, 10" Text="+" />
+                                    <uc:OcrTextInfo Region="1293, 39, 17, 15" Text="..." />
+                                    <uc:OcrTextInfo Region="1337, 43, 12, 16" Text="," />
+                                    <uc:OcrTextInfo Region="152, 128, 137, 23" Text="MAHAVITARAN" />
+                                    <uc:OcrTextInfo Region="152, 151, 37, 10" Text="Maharashtra" />
+                                    <uc:OcrTextInfo Region="189, 152, 16, 9" Text="State" />
+                                    <uc:OcrTextInfo Region="205, 152, 28, 10" Text="Electicty" />
+                                    <uc:OcrTextInfo Region="233, 152, 33, 9" Text="Distibution" />
+                                    <uc:OcrTextInfo Region="266, 152, 10, 9" Text="Co" />
+                                    <uc:OcrTextInfo Region="277, 152, 12, 9" Text="Lid" />
+                                    <uc:OcrTextInfo Region="291, 152, 25, 8" Text="*mim" />
+                                    <uc:OcrTextInfo Region="329, 153, 19, 7" Text="OP" />
+                                    <uc:OcrTextInfo Region="436, 149, 136, 19" Text="Maharashtra" />
+                                    <uc:OcrTextInfo Region="576, 150, 56, 18" Text="State" />
+                                    <uc:OcrTextInfo Region="636, 149, 109, 23" Text="Electricity" />
+                                    <uc:OcrTextInfo Region="746, 150, 128, 18" Text="Distribution" />
+                                    <uc:OcrTextInfo Region="878, 150, 101, 22" Text="Company" />
+                                    <uc:OcrTextInfo Region="981, 149, 82, 19" Text="Limited" />
+                                    <uc:OcrTextInfo Region="363, 174, 23, 11" Text="Web" />
+                                    <uc:OcrTextInfo Region="388, 174, 22, 11" Text="Self" />
+                                    <uc:OcrTextInfo Region="411, 175, 38, 10" Text="Service" />
+                                    <uc:OcrTextInfo Region="451, 175, 31, 10" Text="Home" />
+                                    <uc:OcrTextInfo Region="485, 176, 9, 8" Text="&gt;" />
+                                    <uc:OcrTextInfo Region="497, 174, 48, 13" Text="View/Pay" />
+                                    <uc:OcrTextInfo Region="547, 174, 16, 11" Text="Bill" />
+                                    <uc:OcrTextInfo Region="1060, 176, 81, 14" Text="Language/1TT" />
+                                    <uc:OcrTextInfo Region="163, 186, 44, 16" Text="Web" />
+                                    <uc:OcrTextInfo Region="211, 186, 39, 16" Text="Self" />
+                                    <uc:OcrTextInfo Region="253, 186, 72, 16" Text="Service" />
+                                    <uc:OcrTextInfo Region="362, 197, 88, 24" Text="View/Pay" />
+                                    <uc:OcrTextInfo Region="453, 197, 36, 19" Text="Bill" />
+                                    <uc:OcrTextInfo Region="174, 249, 37, 11" Text="Home" />
+                                    <uc:OcrTextInfo Region="364, 240, 29, 14" Text="Help" />
+                                    <uc:OcrTextInfo Region="395, 240, 53, 12" Text="Manuals" />
+                                    <uc:OcrTextInfo Region="450, 243, 17, 9" Text="on" />
+                                    <uc:OcrTextInfo Region="470, 240, 35, 12" Text="Block" />
+                                    <uc:OcrTextInfo Region="506, 243, 16, 9" Text="or" />
+                                    <uc:OcrTextInfo Region="523, 240, 35, 12" Text="allow" />
+                                    <uc:OcrTextInfo Region="561, 243, 55, 11" Text="pop-ups." />
+                                    <uc:OcrTextInfo Region="636, 241, 66, 11" Text="Document" />
+                                    <uc:OcrTextInfo Region="710, 240, 27, 12" Text="New" />
+                                    <uc:OcrTextInfo Region="765, 240, 37, 12" Text="Video" />
+                                    <uc:OcrTextInfo Region="811, 240, 26, 12" Text="New" />
+                                    <uc:OcrTextInfo Region="174, 282, 29, 11" Text="New" />
+                                    <uc:OcrTextInfo Region="206, 282, 29, 11" Text="User" />
+                                    <uc:OcrTextInfo Region="238, 282, 76, 13" Text="Registration" />
+                                    <uc:OcrTextInfo Region="368, 282, 33, 11" Text="View" />
+                                    <uc:OcrTextInfo Region="402, 282, 21, 13" Text="My" />
+                                    <uc:OcrTextInfo Region="424, 282, 33, 11" Text="Dues" />
+                                    <uc:OcrTextInfo Region="994, 281, 8, 8" Text="*" />
+                                    <uc:OcrTextInfo Region="1004, 281, 51, 12" Text="indicates" />
+                                    <uc:OcrTextInfo Region="1057, 284, 8, 9" Text="a" />
+                                    <uc:OcrTextInfo Region="1068, 281, 47, 14" Text="required" />
+                                    <uc:OcrTextInfo Region="1118, 281, 25, 12" Text="field" />
+                                    <uc:OcrTextInfo Region="1337, 287, 7, 9" Text="O" />
+                                    <uc:OcrTextInfo Region="370, 308, 58, 11" Text="Consumer" />
+                                    <uc:OcrTextInfo Region="429, 308, 28, 13" Text="Type" />
+                                    <uc:OcrTextInfo Region="459, 307, 8, 7" Text="*" />
+                                    <uc:OcrTextInfo Region="726, 308, 14, 11" Text="LT" />
+                                    <uc:OcrTextInfo Region="742, 308, 58, 11" Text="Consumer" />
+                                    <uc:OcrTextInfo Region="801, 308, 11, 9" Text="v" />
+                                    <uc:OcrTextInfo Region="174, 315, 35, 13" Text="Login" />
+                                    <uc:OcrTextInfo Region="370, 333, 58, 11" Text="Consumer" />
+                                    <uc:OcrTextInfo Region="429, 332, 40, 14" Text="No.(12" />
+                                    <uc:OcrTextInfo Region="471, 332, 36, 14" Text="digits)" />
+                                    <uc:OcrTextInfo Region="510, 332, 8, 8" Text="*" />
+                                    <uc:OcrTextInfo Region="724, 335, 28, 11" Text="1234" />
+                                    <uc:OcrTextInfo Region="926, 330, 12, 13" Text="?" />
+                                    <uc:OcrTextInfo Region="174, 348, 42, 12" Text="Forgot" />
+                                    <uc:OcrTextInfo Region="219, 348, 35, 13" Text="Login" />
+                                    <uc:OcrTextInfo Region="174, 361, 111, 13" Text="Name/Password?" />
+                                    <uc:OcrTextInfo Region="653, 359, 58, 14" Text="Captcha*" />
+                                    <uc:OcrTextInfo Region="730, 370, 71, 23" Text="1erkxs" />
+                                    <uc:OcrTextInfo Region="173, 394, 63, 13" Text="View/Pay" />
+                                    <uc:OcrTextInfo Region="238, 393, 21, 12" Text="Bill" />
+                                    <uc:OcrTextInfo Region="174, 427, 82, 13" Text="Consumption" />
+                                    <uc:OcrTextInfo Region="259, 426, 65, 12" Text="Calculator" />
+                                    <uc:OcrTextInfo Region="656, 420, 31, 11" Text="Enter" />
+                                    <uc:OcrTextInfo Region="688, 419, 20, 12" Text="the" />
+                                    <uc:OcrTextInfo Region="711, 419, 34, 12" Text="above" />
+                                    <uc:OcrTextInfo Region="748, 419, 43, 14" Text="captcha" />
+                                    <uc:OcrTextInfo Region="794, 419, 12, 12" Text="in" />
+                                    <uc:OcrTextInfo Region="808, 419, 20, 12" Text="the" />
+                                    <uc:OcrTextInfo Region="830, 419, 25, 12" Text="box." />
+                                    <uc:OcrTextInfo Region="1335, 428, 16, 16" Text="+" />
+                                    <uc:OcrTextInfo Region="369, 444, 53, 14" Text="Captcha*" />
+                                    <uc:OcrTextInfo Region="175, 460, 44, 13" Text="Energy" />
+                                    <uc:OcrTextInfo Region="221, 459, 21, 12" Text="Bill" />
+                                    <uc:OcrTextInfo Region="244, 459, 65, 12" Text="Calculator" />
+                                    <uc:OcrTextInfo Region="1048, 478, 38, 11" Text="Submit" />
+                                    <uc:OcrTextInfo Region="1108, 478, 28, 11" Text="Clear" />
+                                    <uc:OcrTextInfo Region="174, 493, 29, 11" Text="New" />
+                                    <uc:OcrTextInfo Region="205, 493, 71, 11" Text="Connection" />
+                                    <uc:OcrTextInfo Region="278, 493, 52, 13" Text="Request" />
+                                    <uc:OcrTextInfo Region="174, 525, 64, 14" Text="Complaint" />
+                                    <uc:OcrTextInfo Region="240, 526, 77, 13" Text="Registration" />
+                                    <uc:OcrTextInfo Region="174, 558, 41, 12" Text="Online" />
+                                    <uc:OcrTextInfo Region="217, 558, 71, 14" Text="Application" />
+                                    <uc:OcrTextInfo Region="291, 558, 48, 12" Text="Related" />
+                                    <uc:OcrTextInfo Region="174, 572, 64, 13" Text="Complaint" />
+                                    <uc:OcrTextInfo Region="240, 572, 77, 13" Text="Registration" />
+                                    <uc:OcrTextInfo Region="184, 586, 26, 12" Text="New" />
+                                    <uc:OcrTextInfo Region="174, 621, 53, 13" Text="Security" />
+                                    <uc:OcrTextInfo Region="229, 621, 49, 13" Text="Deposit" />
+                                    <uc:OcrTextInfo Region="175, 636, 66, 11" Text="Estimation" />
+                                    <uc:OcrTextInfo Region="254, 635, 26, 12" Text="New" />
+                                    <uc:OcrTextInfo Region="174, 669, 64, 14" Text="Complaint" />
+                                    <uc:OcrTextInfo Region="240, 670, 42, 11" Text="Status" />
+                                    <uc:OcrTextInfo Region="174, 702, 46, 12" Text="Submit" />
+                                    <uc:OcrTextInfo Region="222, 702, 51, 14" Text="Reading" />
+                                  </scg:List>
+                                </uc:CVCache.OcrTexts>
+                              </uc:CVCache>
+                            </scg:List>
+                          </uc:CvCacheContainer.Caches>
+                        </uc:CvCacheContainer>
+                      </p:CVScope.DesignTimeCacheContainer>
+                      <p:CVScope.OCREngine>
+                        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                          <ActivityFunc.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                          </ActivityFunc.Argument>
+                          <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                        </ActivityFunc>
+                      </p:CVScope.OCREngine>
+                      <p:CVScope.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48ea5016-2d28-42a0-816f-173864c88845" InformativeScreenshot="c52be647b3ceac29491f4abd3ea0d46f" Selector="&lt;html app='msedge.exe' title='View/Pay Bill' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CVScope.Target>
+                      <p:CVScope.UseLocalServer>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </p:CVScope.UseLocalServer>
+                    </p:CVScope>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT txtInput'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Text="[captcha]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" CvElementArea="729, 448, 127, 20" CvType="InputBox" DesignTimeRectangle="730, 450, 125, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='form_table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='txtInput' tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form_table' tag='TABLE' /&gt;&lt;webctrl id='txtInput' type='text' tag='INPUT' class='inp_field' aaname='' /&gt;" Guid="883d1b15-53d6-4bce-87a1-fb5b3cb72b97" InformativeScreenshot="2f1bb0a36aa61a65f83b3ad6b46449fc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='View/Pay Bill' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" CvElementArea="1044, 481, 61, 21" CvTextArea="1056, 486, 38, 11" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1045, 482, 48, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl id='lblSubmit' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='lblSubmit' type='' tag='SPAN' class='' aaname='Submit' check:innerText='Submit' /&gt;" Guid="cea060ed-2d6e-4dcf-b178-d12cb0ad297a" InformativeScreenshot="66c45cbc201a3236384d5dd9f5c36b78.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='View/Pay Bill' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="1044, 481, 61, 21" CvTextArea="1056, 486, 38, 11" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1045, 482, 60, 20" ElementType="Button" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl id='submitButton' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='submitButton' type='button' tag='BUTTON' class='' aaname='Submit' check:innerText='Submit' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG Img1'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" CvElementArea="1020, 552, 20, 19" CvType="Icon" DesignTimeRectangle="1022, 553, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='billingTable' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='Img1' tableRow='2' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='billingTable' tag='TABLE' /&gt;&lt;webctrl id='Img1' type='' tag='IMG' class='' aaname='View Bill' /&gt;" Guid="5e6bacee-b2bc-4452-a4ea-5cea7c0192f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN5SURBVDhPrdJvUNN1AMdxn/qoB+Vll9WRf+A4zx5UFkcP1ESUq+i6KO+kEwtPkbjTRECcIwEpkCHDljCVBc1NhkxgA5wjGAPiRGHI5W1wKDhgg4Uigv1g/HlHt9+NrisfdLx/933we/B5Pfjed8Wo08FynhUsc/8bXFj8ZufnxL+lnglOPhV44B6jx+nG6R5ncsrLvDDK7L3LzDdE49VtZbr5BF7vU3HxH+Dd/mHk+mZiZHo+ztSxI01P1HdllJZnMtUcgaDZyHDRLga0iQwo9+C5XSYu/wXUW++wdxHaItHyZspVNiQaichVU3L9IL1NIdy4EM7pjCSuVVQwNeRgoFbB0C2DuP4HaLp5l08yNGz6Rk3QcSPrpU18UaLHYDvKzc4oZOoUdp68ROihH/laep6WBgvO2yaEiTFR+Bs4PjHJ5xmlBCUU83pyDS8lGNlTdJkb9pOMuuJpbMwmOusKrx0oJyhOzfa4XCQZ+fTb74iCLz9Y02IjIEbG6ngtq1J/JaqgmOudElqdUqocFVxss7NP2c76YzWskzQQnKAi7GAW9c3touDLD0oK9Ty3O5eVB2oIUxqo6U7B1JdO3C9mwq6N8EH1FKE/u3g1z8Hq77tZdaSKtfvyOFO6dH9/5Qf3Z5eyMkpBoPQqms7DNNn3E2soJ6BokDVFj9jw0xiBpWOsLR5hTX4Pzx838/JXCpJ/0ImCLz+YWKDjhejz5BiO0OGIRFmdTUJ5F4eqnCSZnJyyupA0DhJb2cuHqi7el9UTkaZGU9siCr784JXadnZLj3Gv7S3O1p7hqK6Duq5hBkdG8fzuwe3x0NQ3TLq1j726bqLOmYmVlfFgyC0KvvygyzmErSyExpJtvKeyEayZIbXjD+ofzWAT5jBPeDlxf5rNLV4C1B5eTK1jS8olXJ6HouDLDwpOM3OaVzgsTVq8x0YCFSO8a5lmV88Mkf3T7LjvZXP3HMF1Twg4ayMkTUex0Squl/KDk5Z4nhS8gVyp4tNkJTuzqgnX9bLN+pjQWwJvtwpsqnzIRkU323OMKKqsLCwsiOul/OB4ZSSPL36E123HpC8jWSIl5pR88T0aCC9sI1TeyjvfVvBZpooKczPeWe+zQddvRvovROI49yUtqtNoiwuR5+eTnpVNakY2kswccvPkaLVaLBYLdrsdQRDE9VJ+cLlaZhD+BHBmQmDOKVv3AAAAAElFTkSuQmCC" InformativeScreenshot="a8c8918f9a5e8a41ef75476256d4a906.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='View/Pay Bill' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss" CvElementArea="919, 428, 111, 23" CvTextArea="926, 432, 79, 13" CvTextArgument="&gt; Pay Now" CvType="Button" DesignTimeRectangle="918, 427, 112, 25" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='Receipt Date Paid Amount' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='paynowbutton' tableRow='62' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Receipt Date Paid Amount' tag='TABLE' /&gt;&lt;webctrl id='paynowbutton' type='image' tag='INPUT' class='' aaname='' check:text='submit' /&gt;" Guid="754515da-ce80-4f76-9155-dfdec4b70644" InformativeScreenshot="9c01a1ca8e8fd38bf89cfa903f971e4b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='LT Energy Bill' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'agree to'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NCheck.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss" CvElementArea="372, 403, 16, 15" CvType="CheckBox" DesignTimeRectangle="373, 404, 13, 13" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl aaname='Consumer No. BU /Circle Code Bill Month Consumption (Units) Bill*' tag='TABLE' /&gt;&lt;webctrl id='agree' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Consumer No. BU /Circle Code Bill Month Consumption (Units) Bill*' tag='TABLE' /&gt;&lt;webctrl id='agree' type='checkbox' tag='INPUT' class='' aaname='' /&gt;" Guid="956b27b5-f9d1-48f9-b3af-d5833f313d22" InformativeScreenshot="4d972d0a48da603ea0402c9d74b1bad0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Make Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArea="388, 407, 312, 13" CvTextArgument="agree to the above conditions for Online Payment." CvType="Text" DesignTimeRectangle="389, 406, 312, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Consumer No. BU /Circle Code Bill Month Consumption (Units) Bill*' tag='TABLE' /&gt;&lt;webctrl id='lblMP21' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Consumer No. BU /Circle Code Bill Month Consumption (Units) Bill*' tag='TABLE' /&gt;&lt;webctrl id='lblMP21' type='' tag='SPAN' class='' aaname='agree to the above conditions for Online Payment.' check:innerText='agree to the above conditions for Online Payment.' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheck.Target>
+                    </uix:NCheck>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT paynowbutton1'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wss.mahadiscom.in/wss/wss" CvElementArea="1043, 504, 112, 23" CvTextArea="1051, 508, 79, 12" CvTextArgument="&gt; Pay Now" CvType="Button" DesignTimeRectangle="1043, 503, 112, 25" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='Consumer No. BU /Circle Code Bill Month Consumption (Units) Bill*' tag='TABLE' /&gt;&lt;webctrl id='paynowbutton1' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Consumer No. BU /Circle Code Bill Month Consumption (Units) Bill*' tag='TABLE' /&gt;&lt;webctrl id='paynowbutton1' type='image' tag='INPUT' class='' aaname='' /&gt;" Guid="d5922b8e-dc62-4378-846a-4972a1e8f564" InformativeScreenshot="70f150fb95af31a2bd5994ecfcf012c6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Make Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'You have'" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="d7fdf754-b7d4-4572-9694-bf7bf3766e85" TextString="[Paidsuccesfully]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://billing.mahadiscom.in/processpayment.php" DesignTimeRectangle="94, 228, 1140, 165" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='You have selected to pay  to MSEDCL as ' /&gt;" Guid="4294fc01-88d5-4655-a0af-5ea89da0a95c" InformativeScreenshot="d34c405f490cc7ad0920c7c74f7dd982.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Mahavitaran' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="3ab8d8c4c9e702a3f637d960d169e61c.jpg" Selector="&lt;html app='msedge.exe' title='वीज देयक अवलोकन/भरणा' /&gt;" Title="वीज देयक अवलोकन/भरणा" Url="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>

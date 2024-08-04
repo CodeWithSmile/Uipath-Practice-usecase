@@ -1,0 +1,76 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "output&Sequence_1",
+        "run_query&Sequence_1",
+        "dt_connect&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Run Command(inseert-upadte-delete).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "row_count_delete&Sequence_1",
+        "row_count_update&Sequence_1",
+        "row_count_insert&Sequence_1",
+        "dt_connect&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Insert Datatable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "rows&Sequence_1",
+        "dt_input&Sequence_1",
+        "dt_connect&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Insert_bulk Datatable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result&Sequence_1",
+        "ouput&Sequence_1",
+        "dt_table&Sequence_1",
+        "rows&Sequence_1",
+        "dt_input&Sequence_1",
+        "dt_connect&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Bulk_update.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "rows&Sequence_1",
+        "dt_input&Sequence_1",
+        "dt_connect&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Update_Entity_Record_Multiple_" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="825,940" sap2010:WorkflowViewState.IdRef="Update_Entity_Record_Multiple__1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:d="clr-namespace:Data_Service_Demo;assembly=DataService.Data_Service_Demo" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:udam="clr-namespace:UiPath.DataService.Activities.Models;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>Data_Service_Demo</x:String>
+      <x:String>UiPath.DataService.Definition</x:String>
+      <x:String>UiPath.DataService.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataService.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>DataService.Data_Service_Demo</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Update_Entity_Record_Multiple_" sap:VirtualizedContainerService.HintSize="654,875" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence-Update Multiple Records Using Query Entity Filter " sap:VirtualizedContainerService.HintSize="592,787" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:IList(d:Demo)" Name="listOfData" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uda:QueryEntityRecords x:TypeArguments="d:Demo" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="a913fbfa-032b-ef11-86d2-000d3ab405d7" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="530,172" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[listOfData]" QueriedEntityId="a913fbfa-032b-ef11-86d2-000d3ab405d7" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
+        <uda:QueryEntityRecords.FilterArguments>
+          <uda:FilterArgument FilterActivityType="{x:Null}">
+            <uda:FilterArgument.Filter>
+              <uda:GroupFilter Index="0" Operator="OR">
+                <uda:GroupFilter.Filters>
+                  <scg:List x:TypeArguments="uda:SimpleFilter" Capacity="4">
+                    <uda:SimpleFilter ExpressionValue="{x:Null}" FieldName="name" FieldType="UiPath.DataService.Core.Models.EntityField" Operator="=" ValueIndex="0" />
+                    <uda:SimpleFilter ExpressionValue="{x:Null}" FieldName="name" FieldType="UiPath.DataService.Core.Models.EntityField" Operator="=" ValueIndex="1" />
+                  </scg:List>
+                </uda:GroupFilter.Filters>
+                <uda:GroupFilter.Groups>
+                  <scg:List x:TypeArguments="uda:GroupFilter" Capacity="0" />
+                </uda:GroupFilter.Groups>
+              </uda:GroupFilter>
+            </uda:FilterArgument.Filter>
+          </uda:FilterArgument>
+        </uda:QueryEntityRecords.FilterArguments>
+        <uda:QueryEntityRecords.FilterValues>
+          <scg:List x:TypeArguments="InArgument" Capacity="4">
+            <InArgument x:TypeArguments="x:String">Muskan</InArgument>
+            <InArgument x:TypeArguments="x:String">Aman</InArgument>
+          </scg:List>
+        </uda:QueryEntityRecords.FilterValues>
+      </uda:QueryEntityRecords>
+      <ui:ForEach x:TypeArguments="d:Demo" CurrentIndex="{x:Null}" DisplayName="For Each currentDemo" sap:VirtualizedContainerService.HintSize="530,504" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listOfData]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="d:Demo">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="d:Demo" Name="currentDemo" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,367" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[currentDemo.city]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">Thane</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uda:UpdateEntityRecord x:TypeArguments="d:Demo" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="a913fbfa-032b-ef11-86d2-000d3ab405d7" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntity="[currentDemo]" InputEntityInFieldView="[new Data_Service_Demo.Demo()]" IsInRecordView="True" OutputEntity="[currentDemo]" TimeoutInMs="30000">
+                <uda:UpdateEntityRecord.RecordId>
+                  <InArgument x:TypeArguments="s:Guid" />
+                </uda:UpdateEntityRecord.RecordId>
+                <uda:UpdateEntityRecord.State>
+                  <udam:RecordState IsInRecordView="True" RequiredFieldCount="2">
+                    <udam:RecordState.SelectedFields>
+                      <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="2">
+                        <udam:DynamicEntityField Id="b6858447-062b-ef11-86d2-000d3ab405d7" Name="city">
+                          <udam:DynamicEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="x:String" />
+                          </udam:DynamicEntityField.ArgumentValue>
+                        </udam:DynamicEntityField>
+                        <udam:DynamicEntityField Id="3d8a1340-062b-ef11-86d2-000d3ab405d7" Name="name">
+                          <udam:DynamicEntityField.ArgumentValue>
+                            <InArgument x:TypeArguments="x:String" />
+                          </udam:DynamicEntityField.ArgumentValue>
+                        </udam:DynamicEntityField>
+                      </scg:List>
+                    </udam:RecordState.SelectedFields>
+                  </udam:RecordState>
+                </uda:UpdateEntityRecord.State>
+              </uda:UpdateEntityRecord>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+  </Sequence>
+</Activity>

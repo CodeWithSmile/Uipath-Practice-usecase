@@ -1,0 +1,333 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "QuerySyntaxDemo(Sqaure).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "a&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MethodSyntaxDemo(Square).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_2",
+        "A&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FilterDataTable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InputDt&Sequence_26",
+        "InputDt&Sequence_24",
+        "InputDataTable&Sequence_18",
+        "InputDt&Sequence_1",
+        "dt_text&Sequence_1",
+        "FilterData&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Update DataTable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "clonedt&Sequence_8",
+        "dt_Result_Upadte&Sequence_8",
+        "dt_textTable&Sequence_8",
+        "dt_Currency&Sequence_8",
+        "Clone_data&Sequence_6",
+        "dt_Output&Sequence_6",
+        "dt_input&Sequence_1",
+        "dt_Result&Sequence_1",
+        "dt_text&Sequence_1",
+        "dt_update&Sequence_1",
+        "clone_dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".first Method.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_result&Sequence_3",
+        "dt_first&Sequence_1",
+        "IntArrayB&Sequence_2",
+        "result&Sequence_1",
+        "IntArrayA&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "temp.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".where method.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "datatable_result&Sequence_1",
+        "dt_result&Sequence_1",
+        "dt_first&Sequence_1",
+        "reslist&Sequence_3",
+        "liststr&Sequence_3",
+        "arrayres&Sequence_2",
+        "arrayInt&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".select method.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result1&Sequence_1",
+        "result&Sequence_1",
+        "intarray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Column.cast.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt&Sequence_1",
+        "result&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Grouping method.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "text&Sequence_1",
+        "op&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Aggregate function -count.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "salaryHr_It_Fn&Sequence_9",
+        "salary&Sequence_9",
+        "salaryHr_It&Sequence_9",
+        "salary&Sequence_8",
+        "salaryHr_It&Sequence_8",
+        "salary&Sequence_7",
+        "countIT_HR&Sequence_1",
+        "countIT&Sequence_1",
+        "countRow&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "sum.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_sum&Sequence_1",
+        "dt&Sequence_1",
+        "sum_lists&Sequence_3",
+        "list2&Sequence_1",
+        "sum&Sequence_1",
+        "list1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "group_by and sum.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dttable&Sequence_2",
+        "text&Sequence_2",
+        "ot&Sequence_2",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "min_max.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "txt&Sequence_1",
+        "datatable&Sequence_1",
+        "minSalaryhr&Sequence_1",
+        "minSalary&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "average.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "t&Sequence_1",
+        "ot&Sequence_1",
+        "res&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "double_dec_int_str_DATATYPE.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strd&Sequence_1",
+        "int&Sequence_1",
+        "sum&Sequence_1",
+        "decimalB&Sequence_1",
+        "doubleA&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "orderby(sorting).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "text1&Sequence_1",
+        "op1&Sequence_1",
+        "text&Sequence_1",
+        "op&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SKIP AND TAKE.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_txt&Sequence_1",
+        "exportrec&Sequence_1",
+        "skiprec&Sequence_1",
+        "OP&Sequence_1",
+        "DT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "join_data_table.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_table&Sequence_1",
+        "output&Sequence_1",
+        "innerJoin&Sequence_1",
+        "dt_t2&Sequence_1",
+        "dt_t1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Any_and_All.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outputAny&Sequence_1",
+        "outputAll&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "skip_while and take While.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_tb&Sequence_1",
+        "op&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "remove_duplicates.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_t&Sequence_1",
+        "op&Sequence_8",
+        "dataop&Sequence_1",
+        "dt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ListOfDatatable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "res&Sequence_8",
+        "op&Sequence_1",
+        "dt3&Sequence_1",
+        "dt2&Sequence_1",
+        "dt1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

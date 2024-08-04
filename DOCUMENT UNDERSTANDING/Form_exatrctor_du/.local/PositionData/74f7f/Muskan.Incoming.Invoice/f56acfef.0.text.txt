@@ -1,0 +1,42 @@
+SuperStore
+
+Bill To:
+
+Aaron Bergman
+
+Ship To:
+
+98103, Seattle, Washington, United States
+
+Item
+
+Global Push Button Manager's Chair, Indigo
+
+Chairs, Furniture, FUR-CH-4421
+
+INVOICE
+
+# 36258
+
+Date: Mar 06 2012
+
+Ship Mode:
+
+Balance Due:
+
+First Class
+
+$50.10
+
+Quantity 1
+
+Rate Amount $48.71 $48.71
+
+Subtotal:         $48.71
+Discount (20%):   $9.74 
+Shipping:         $11.13
+Total:            $50.10
+
+Notes: Thanks for your business!
+
+Terms: Order ID : CA-2012-AB10015140-40974

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Vendor Inventory'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ex24MufIgUuDk3xg0xFLOA",
+  "Reference": "zs5taef01k-tqg22iqMWnA/ex24MufIgUuDk3xg0xFLOA",
+  "ParentRef": "zs5taef01k-tqg22iqMWnA/OcCadu_LjEC_dH9S6BmEQw",
+  "Created": "2024-06-12T10:38:39.1350145Z",
+  "Updated": "2024-06-12T10:38:39.1350145Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
